@@ -1,0 +1,2 @@
+class MedicareWebsite < ApplicationRecord
+end

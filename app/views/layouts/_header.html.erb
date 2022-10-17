@@ -1,0 +1,43 @@
+<header>
+
+  <div class="header_main">
+    <div class="header_logo">
+      <%= image_tag("corwinrey_logo.png", :alt =>
+              "corwin-rey-agency", :class => "corwinrey_logo") %>
+    </div>
+
+    <div class="header_info">
+      <div class="header_info_top">
+        <h4 class="header_h4">Contact Us</h4>
+        <h4 class="header_h4">Get A Quote</h4>
+        <h4 class="header_h4">About Us</h4>
+      </div>
+
+      <div class="header_info_bottom">
+        <div class="cell_phone">
+          <%= image_tag("cellphone.png", :alt =>
+                    "cell_phone", :class => "cell_svg_image") %>
+        </div>
+
+        <div class="questions_header">
+
+        <p>Questions? Call us now.</p>
+        <h4>(999)-999-9999</h4>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header_nav">
+    <ul class="header_nav_list">
+      <li class="nav_list_item"><%= link_to "Home", medicare_websites_path, class: "nav_link" %></li>
+      <li class="nav_list_item"><%= link_to "Medicare Resources", medicare_resources_path, class: "nav_link" %></li>
+      <li class="nav_list_item"><%= link_to "Medicare Options", medicare_options_path, class: "nav_link" %></li>
+      <li class="nav_list_item"><%= link_to "Dental & Vision", dental_vision_path, class: "nav_link" %></li>
+      <li class="nav_list_item"><%= link_to "Cancer & Hospital Indemnity", cancer_hospital_path, class: "nav_link" %></li>
+      <li class="nav_list_item"><%= link_to "Request A Quote", quote_path, class: "nav_link" %></li>
+    </ul>
+  </nav>
+
+</header>

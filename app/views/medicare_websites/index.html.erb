@@ -1,0 +1,126 @@
+<style media="screen">
+  .nav_list_item:nth-child(1) {
+    background-color: white;
+  }
+  .nav_list_item:nth-child(1) > a {
+    color: #00A;
+  }
+</style>
+
+<main>
+  <section class="hero_section">
+    <picture class="hero_picture_tag">
+      <%= image_tag("https://agentmethods-production.s3.amazonaws.com/C72H3TkVJ2hxshgdjC8X8sa8", :alt =>
+              "three dog", :class => "three_dogs") %>
+    </picture>
+    <div class="hero_info_container">
+
+      <h1 class="hero_text hero_shadow hero_text_header">Review Your Insurance Options</h1>
+      <p class="hero_text hero_shadow hero_text_p">We'll help you find the right plan for your needs.</p>
+      <a class="hero_text hero_anchor" href="#">Review Insurance Plans</a>
+
+    </div>
+  </section>
+
+  <section class="info_section">
+    <article class="home_article_top">
+
+      <h2 class="info_title_h2">We've got you covered.</h2>
+      <p class="info_title_p">Navigating the complex world of insurance can be frustrating. We're here to make it easy and be a resource you can depend on year after year.</p>
+
+
+        <div class="info_box_container">
+
+          <div class="info_box">
+            <h3 class="info_box_text info_box_h">Medicare Advantage</h3>
+            <p class="info_box_text info_box_p">Medicare Advantage plans are new health care options that are part of the Medicare program. Coverage may include Medicare Part D prescription drug coverage as well as hospital, doctor, skilled nursing, and other medical services.</p>
+            <a class="info_box_anchor info_anchor_text" href="#">Know More</a>
+          </div>
+
+          <div class="info_box">
+            <h3 class="info_box_text info_box_h">Medicare Supplement</h3>
+            <p class="info_box_text info_box_p">A Medicare Supplement (Medigap) insurance, sold by private companies, can help pay some of the health care costs that Original Medicare doesn't cover, like copayments, coinsurance, and deductibles.</p>
+            <a class="info_box_anchor info_anchor_text" href="#">Know More</a>
+          </div>
+
+          <div class="info_box">
+            <h3 class="info_box_text info_box_h">Medicare Part D</h3>
+            <p class="info_box_text info_box_p">Medicare Part D is the federal government's prescription drug program that covers both brand-name and generic prescription drugs at participating pharmacies in your area.</p>
+            <a class="info_box_anchor info_anchor_text" href="#">Know More</a>
+          </div>
+
+        </div>
+    </article>
+
+    <article class="home_article_bottom">
+      <div class="home_article_bottom_container">
+        <div class="home_article_bottom_textbox">
+          <p class="article_textbox_p p1 article_textbox">ABOUT CORWIN-REY INSURANCE AGENCY</p>
+          <h3 class="article_textbox_h article_textbox">Your Trusted Insurance Professionals!</h3>
+          <br>
+          <br>
+          <p class="article_textbox_p p2 article_textbox">We specialize in Medicare health insurance In Washington and offer a
+            wide range of options from many carriers to help you find the best fit.
+            It's important to understand the choices you have in plans and how those
+            choices can affect your health and budget.
+          </p>
+            <br>
+            <br>
+          <p class="article_textbox_p article_textbox">Take a few minutes to explore our site, to learn about the types of
+            coverage we provide and the educational resources we offer. Remember,
+            we're here to help. Contact us to discuss how we can help meet your
+            unique needs.
+          </p>
+          <p class="article_textbox_p article_textbox info_contact">By contacting the phone number on this website you will be directed to
+            a licensed agent.
+          </p>
+        </div>
+        <picture>
+          <%= image_tag("renee_headshot.png", :alt =>
+              "headshot", :class => "headshot") %>
+        </picture>
+      </div>
+    </article>
+
+    <figure class="logo_section">
+
+      <%= image_tag("medicare_logos.png", :alt =>
+          "logos", :class => "medicare_logos") %>
+
+    </figure>
+
+    <article class="home_form">
+
+      <div class="text_form_left">
+
+        <p class="">Have a question?</p>
+        <h3 class="">Get in touch with us!</h3>
+
+      </div>
+
+      <div class="actual_form">
+
+        <ul>
+
+        <li><%= form_with url: "/search", method: :get do |form| %></li>
+        <%= form.label :name, "Name", :class => 'text_form'%>
+        <li><%= form.search_field :name, :class => 'entryfield_form name_input_form'%></li>
+        <%= form.label :address, "Address", :class => 'text_form'%>
+        <li><%= form.email_field :address, :class => 'entryfield_form'%></li>
+        <%= form.label :phone, "Phone Number", :class => 'text_form'%>
+        <li><%= form.telephone_field :phone, :class => 'entryfield_form'%></li>
+        <%= form.label :message, "Question or Message", :class => 'text_form'%>
+        <li><%= form.text_area :message, size: "70x5", :class => 'entryfield_form'%></li>
+
+        <li><%= form.submit "Ask Question", :class => 'submit_button' %></li>
+
+        <% end %>
+
+      </ul>
+
+      </div>
+
+    </article>
+
+  </section>
+</main>

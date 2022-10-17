@@ -1,0 +1,126 @@
+.medicare_simplified_sidemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  gap: 2rem;
+
+}
+
+
+.medicare_simplified_section {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ max-width: 80rem;
+
+}
+
+.medicare_simplified_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 45.25rem;
+
+}
+
+// .article_main_box {
+//   display: flex;
+//   border-style:solid;
+//   border: 10px;
+//   border-color:#000;
+//   border-width: 5px;
+// }
+
+.main_content_section {
+  width: 60%;
+  margin-top: 5rem;
+}
+
+.side_content_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  align-self: flex-start;
+  margin-top: 5rem;
+  position: relative;
+  left: 2rem;
+
+}
+
+.medicare_body {
+  display: flex;
+  justify-content: center;
+
+}
+
+.maze_picture_container {
+  width: 50rem;
+  height: 30rem;
+}
+
+.doctor_picture_container {
+  width: 50rem;
+  height: 20rem;
+}
+
+.maze_picture {
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.doctor_picture {
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.article_text {
+  line-height: 35px;
+  width: 45.25rem;
+}
+
+.margin_bottom {
+  margin-bottom: 5rem;
+}
+
+.medicare_resources_header {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.sidemenu_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #4d4dce;
+  margin-bottom: 1rem;
+  line-height: 1.25rem;
+
+}
+
+.sidemenu_li {
+margin: none;
+list-style: disc;
+}
+
+.list_shift {
+line-height: 25px;
+margin-left: 1rem;
+}
+
+.sidemenu_header {
+ margin-left: -1rem;
+}
+
+// ul.custom-list {
+// list-style: none;
+// }
+// ul.custom-list li:before {
+// content: "\00BB";
+//
+// }

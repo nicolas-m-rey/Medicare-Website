@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'index', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p id="notice"><%= notice %></p>
+    <style media="screen">
+      .nav_list_item:nth-child(6) {
+        background-color: white;
+      }
+      .nav_list_item:nth-child(6) > a {
+        color: #00A;
+      }
+    </style>
+    <%= render "layouts/header" %>
+    <%= yield %>
+    <%= render "layouts/footer" %>
+  </body>
+</html>
