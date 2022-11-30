@@ -9,12 +9,12 @@
 
 
 .medicare_simplified_section {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- max-width: 80rem;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  min-width: 68.75rem;
 }
 
 .medicare_simplified_article {

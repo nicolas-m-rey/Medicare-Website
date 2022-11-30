@@ -2,41 +2,41 @@
 <main>
   <section>
 
-    <article class="quote_form">
+    <article class="article_quote_form">
 
       <div class="text_form_left">
 
-        <h1 class="">I'D LIKE TO SPEAK WITH A LICENSED SALES AGENT TO DISCUSS MY MEDICARE OPTIONS</h1>
-        <p class="">Please complete the information below.</p>
+        <h1 class="form_page_text">I'D LIKE TO SPEAK WITH A LICENSED SALES AGENT TO DISCUSS MY MEDICARE OPTIONS</h1>
+        <p class="form_page_text">Please complete the information below.</p>
       </div>
 
-      <div class="actual_form">
+      <div class="quote_form">
 
         <ul>
 
         <li><%= form_with url: "/search", method: :get do |form| %></li>
-        <%= form.label :name, "Name", :class => 'text_form'%>
-        <li><%= form.search_field :name, :class => 'entryfield_form name_input_form'%></li>
-        <%= form.label :address, "Address", :class => 'text_form'%>
-        <li><%= form.email_field :address, :class => 'entryfield_form'%></li>
-        <%= form.label :phone, "Phone Number", :class => 'text_form'%>
-        <li><%= form.telephone_field :phone, :class => 'entryfield_form'%></li>
-        <%= form.label :state, "State", :class => 'text_form'%>
+        <%= form.label :name, "Name", :class => 'text_quote_form'%>
+        <li><%= form.search_field :name, :class => 'entryfield_quote_form name_input_form_two'%></li>
+        <%= form.label :address, "Address", :class => 'text_quote_form'%>
+        <li><%= form.email_field :address, :class => 'entryfield_quote_form'%></li>
+        <%= form.label :phone, "Phone Number", :class => 'text_quote_form'%>
+        <li><%= form.telephone_field :phone, :class => 'entryfield_quote_form'%></li>
+        <%= form.label :state, "State", :class => 'text_quote_form'%>
         <li><%= form.select :state, ["Washington", "Oregon", "California"] %></li>
-        <%= form.label :check_box, "Products You Are Interested In", :class => 'text_form'%>
+        <%= form.label :check_box, "Products You Are Interested In", :class => 'text_quote_form'%>
         <li><%= check_box_tag(:check_box) %></li>
-        <%= label_tag(:check_box, "Stand-alone Medicare Prescription Drug Plans (Part D)", :class => 'text_form') %>
+        <%= label_tag(:check_box, "Stand-alone Medicare Prescription Drug Plans (Part D)", :class => 'text_quote_form') %>
         <li><%= check_box_tag(:check_box) %></li>
-        <%= label_tag(:check_box, "Medicare Advantage Plans (Part C) and Cost Plans", :class => 'text_form') %>
+        <%= label_tag(:check_box, "Medicare Advantage Plans (Part C) and Cost Plans", :class => 'text_quote_form') %>
         <li><%= check_box_tag(:check_box) %></li>
-        <%= label_tag(:check_box, "Dental/Vision/Hearing Products", :class => 'text_form') %>
+        <%= label_tag(:check_box, "Dental/Vision/Hearing Products", :class => 'text_quote_form') %>
         <li><%= check_box_tag(:check_box) %></li>
-        <%= label_tag(:check_box, "Hospital Indemnity Products", :class => 'text_form') %>
+        <%= label_tag(:check_box, "Hospital Indemnity Products", :class => 'text_quote_form') %>
         <li><%= check_box_tag(:check_box) %></li>
-        <%= label_tag(:check_box, "Medicare Supplement (Medigap) Products", :class => 'text_form') %>
+        <%= label_tag(:check_box, "Medicare Supplement (Medigap) Products", :class => 'text_quote_form') %>
 
-        <%= form.label :message, "Additional Comments", :class => 'text_form'%>
-        <li><%= form.text_area :message, size: "70x5", :class => 'entryfield_form'%></li>
+        <%= form.label :message, "Additional Comments", :class => 'text_quote_form'%>
+        <li><%= form.text_area :message, size: "70x5", :class => 'entryfield_quote_form'%></li>
 
         <li><%= form.submit "Ask Question", :class => 'submit_button' %></li>
 
